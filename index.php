@@ -80,6 +80,25 @@
     echo ". Minu e-post on {$assoc["e_mail"]}."; 
     
     ?>
-    
+    <h2>Array functions</h2>
+    <?php $numbers_2 = array(8,23,15,42,16,4);
+    echo count($numbers_2);
+    echo "<br>";
+    echo max($numbers_2);
+    echo "<br>";
+    echo min($numbers_2);
+    echo "<br>";
+    sort($numbers_2);
+    print_r($numbers_2);
+    echo "<br>";
+    rsort($numbers_2);
+    print_r($numbers_2);
+    echo "<br>";
+    $num_string = implode("ja", $numbers_2);
+    echo $num_string;
+    echo "<br>";
+    print_r(explode(" ja ", $num_string));
+
+    ?>
 </body>
 </html>
